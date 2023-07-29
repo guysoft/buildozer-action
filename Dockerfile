@@ -1,10 +1,6 @@
 FROM guysoft/buildozer:main
 # See https://github.com/kivy/buildozer/blob/master/Dockerfile
 
-# Buildozer will be installed in entrypoint.py
-# This is needed to install version specified by user
-RUN pip3 uninstall -y buildozer
-
 # Remove a lot of warnings
 # sudo: setrlimit(RLIMIT_CORE): Operation not permitted
 # See https://github.com/sudo-project/sudo/issues/42
